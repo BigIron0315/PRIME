@@ -1,10 +1,6 @@
 # PRIME
 
 **Proactive detection of O-RAN / RRC misconfigurations via implicit inter-parameter constraints extracted from 3GPP specifications.**
-
-<!-- TODO: fill in the official PRIME acronym expansion, paper link, and authors -->
-> Paper: _"PRIME: ..."_ (link TBD) · Authors: TBD
-
 PRIME reads the 3GPP RRC specifications (TS 38.331 for NR and TS 36.331 for LTE) and extracts the *implicit* dependencies between configuration parameters that the specifications imply but never state as a single explicit rule. Violating one of these dependencies produces a valid-looking configuration that misbehaves once deployed (handover oscillation, coverage holes, UEs that never sleep). PRIME turns these dependencies into a machine-checkable **constraints database** that an operator can validate any configuration against before it reaches the RAN.
 
 This repository releases two artifacts from the paper:
